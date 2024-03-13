@@ -1,1 +1,22 @@
-rootProject.name = 'shop-app'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'ShoppingApp'
+
+// includes
+// include ':model'
+include ':app-service'
+include ':model'
+include ':usecase'
+include ':web-client'
+include ':reactive-web'
+
+// subprojects
+project(':app-service').projectDir = file('./applications/app-service')
+project(':model').projectDir = file('./domain/model')
+project(':usecase').projectDir = file('./domain/usecase')
+project(':web-client').projectDir = file('./infrastructure/driven-adapters/web-client')
+project(':reactive-web').projectDir = file('./infrastructure/entry-points/reactive-web')

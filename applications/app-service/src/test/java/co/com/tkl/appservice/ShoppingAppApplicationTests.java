@@ -1,13 +1,13 @@
-package co.com.tkl.shopapp;
+package co.com.tkl.appservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ShopAppApplicationTests {
+class ShoppingAppApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

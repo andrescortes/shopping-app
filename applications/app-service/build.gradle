@@ -1,0 +1,21 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+dependencies {
+    // subprojects
+    implementation project(':model')
+    implementation project(':usecase')
+
+    // web client
+    implementation project(':web-client')
+    implementation project(':reactive-web')
+
+    // dependencies
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+
+    testImplementation 'com.tngtech.archunit:archunit-junit5:1.0.1'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind'
+}
+
